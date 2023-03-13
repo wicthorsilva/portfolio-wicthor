@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/icons/img_wicthor-portfolio.ico" type="image/x-icon">
         <title>Wicthor Portfólio</title>
         <link rel="stylesheet" href="css/style.css">
 
@@ -28,21 +29,22 @@
 
             <nav class="nav-bar">
                 <ul class="list-nav-bar">
-                    <li class="li-nav-bar"><a href="" style="text-decoration: none;">Currículo</a></li>
-                    <li class="li-nav-bar"><a href="" style="text-decoration: none;">Portfólio</a></li>
-                    <li class="li-nav-bar"><a href="" style="text-decoration: none;">Contatos</a></li>
+                    <li class="li-nav-bar"><a href="#sobre" style="text-decoration: none;">Currículo</a></li>
+                    <li class="li-nav-bar"><a href="#projetos" style="text-decoration: none;">Projetos</a></li>
+                    <li class="li-nav-bar"><a href="#contato" style="text-decoration: none;">Contatos</a></li>
                 </ul>
             </nav>
         </header>
         
               <!--Curriculo (Sobre mim)-->
-        <section class="conteudo-curriculo">
+        <section id="sobre" class="conteudo-curriculo">
             <div class="titulos-page-conteudos">
             <h2 id="sobre-mim">Sobre mim</h2>
             </div>
 
             <div class="container-curriculo">
-                
+                <div class="conteudo-sobremim">
+
                     <h3 class="h-conteudo-curriculo">Resumo</h3>
                     <p class="text-conteudo-curriculo">Meu nome Wicthor, estou me formando em análise e desenvolvimento de sistemas, tenho conhecimento em desing gráfico e marketing digital.<br> Busco expandir meus conhecimentos profissionais e avançar nesse mundo de desenvolvimento de sistemas.</p>
                     <br>
@@ -60,74 +62,101 @@
                         <li class="li-curriculo">Projetos pessoais de estudos.</li>
                         <li class="li-curriculo">Portfólio pessoal na web.</li>
                     </ul>
-                
+                </div>
             </div>
         </section>
 
                 <!--Portfólio (Projetos)-->
-        <section class="conteudo-projetos">
+        <section id="projetos" class="section-projetos">
 
                 <div class="titulos-page-conteudos">
-                 <h2 id="projetos">Projetos</h2>
+                 <h2 id="">Projetos</h2>
+                </div>
+            <div class="cards-container">
+                <div class="container-servicos">
+                    <div class="boxs-cards">
+                        <a href=""><img src="assets/img/projetos/barber-lup.png" alt="img-barber-lup"></a>
+                    </div>
+                    <div class="boxs-cards">
+                        <a href=""><img src="assets/img/projetos/project-landpage.png" alt="img-landpage"></a>
+                    </div>
+                    <div class="boxs-cards">
+                        <a href=""><img src="" alt="img-"></a>
+                    </div>
+                </div>
+        
+                <div class="container-servicos">
+                    <div class="boxs-cards">
+                        <a href=""><img src="" alt="img"></a>
+                    </div>
+                    <div class="boxs-cards">
+                        <a href=""><img src="" alt="img"></a>
+                    </div>
+                    <div class="boxs-cards">
+                        <a href=""><img src="" alt="img"></a>
+                    </div>
                 </div>
 
-            <div class="divs-boxs">
-                <div class="div-boxs-1a2">
-                    <div class="box-img-projetos">
-                        <img class="tag-img" src="assets/img/project-landpage.png" alt="Imagem Landpage">
-                    </div>
-
-                    <div class="box-img-projetos">
-                        <img src="" alt="">
-                    </div>
-
-                </div>
-            
-
-                <div class="div-boxs-3a4">
-                    <div class="box-img-projetos">
-                        <img src="" alt="">
-                    </div>
-
-                    <div class="box-img-projetos">
-                        <img src="" alt="">
-                    </div>
-                    
-                </div>
-
-                <div class="div-boxs-5a6">
-                    <div class="box-img-projetos">
-                        <img src="" alt="">
-                    </div>
-
-                    <div class="box-img-projetos">
-                        <img src="" alt="">
-                    </div>
-            </div>
+                
+            </div>    
         </section>
 
            <!--Contatos-->
-        <section class="conteudo-contato">
+        <section id="contato" class="conteudo-contato">
             <div class="titulos-page-conteudos">
-             <h2 id="contatos">Contatos</h2>
+             <h2 id="">Contatos</h2>
             </div>
 
-            <div class="div-contatos">
-                <div class="redes-contatos">
-                    <img src="assets/img/icons/icons8-github-50 (2).png" alt="GitHub">
-                    <p>@wicthorsilva</p>
-                </div>
-                <div class="redes-contatos">
-                    <img src="assets/img/icons/icons8-mail-50 (1).png" alt="E-mail">
-                    <p>wicthor@gmail.com</p>
-                </div>
-                <div class="redes-contatos">
-                    <img src="assets/img/icons/icons8-linkedin-50.png" alt="linkedin">
-                    <p>@wicthor</p>
-                </div>
-                <div class="redes-contatos">
-                    <img src="assets/img/icons/icons8-behance-50.png" alt="Behance">
-                    <p>/wicthordev</p>
+            <div class="formulario-contato">
+                <!-- <div id="h2-contato"><h2>Fale conosco</h2></div> -->
+    
+                <form action="">
+    
+                    <fieldset>
+                        <label for="nome">Seu nome</label>
+                        <input type="text" name="nome">
+                    </fieldset>
+    
+                    <fieldset>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email">
+                    </fieldset>
+    
+                    <fieldset>
+                        <label for="assunto">Assunto</label>
+                        <input type="text" name="assunto">
+                    </fieldset>
+    
+                    <fieldset>
+                        <label for="input-msg">Assunto</label>
+                        <textarea name="input-msg" id="input-msg" cols="30" rows="10"></textarea>
+                        <input id="input-enviar" type="submit" value="Enviar" style="width: 80px; height: 40px;">
+                    </fieldset>
+    
+                    
+                </form>
+            </div>
+
+
+            <div class="container-contato">
+                <div class="div-contatos">
+                    <div class="redes-contatos">
+                        <img src="assets/img/icons/icons8-github-50 (2).png" alt="GitHub">
+                        <p>@wicthorsilva</p>
+                    </div>
+                    
+                    <div class="redes-contatos">
+                        <img src="assets/img/icons/icons8-mail-50 (1).png" alt="E-mail">
+                        <p>wicthor@gmail.com</p>
+                    </div>
+                    <div class="redes-contatos">
+                        <img src="assets/img/icons/icons8-linkedin-50.png" alt="linkedin">
+                        <p>@wicthor</p>
+                    </div>
+                    <div class="redes-contatos">
+                        <img src="assets/img/icons/icons8-behance-50.png" alt="Behance">
+                        <p>/wicthordev</p>
+                    </div>
                 </div>
             </div>
 
