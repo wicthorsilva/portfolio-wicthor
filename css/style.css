@@ -259,3 +259,75 @@ footer {
 
     
 }
+
+@media (max-width:600px) {
+
+    .header-my-name_my-img {
+        color: white;
+        display: block;
+        margin-left: 10%;
+    }
+
+    .conteudo-sobremim{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .container-curriculo {
+        background-color: #000000;
+        height: auto;
+        width: 70%;
+        border-radius: 50px;
+        margin: auto;   
+    }
+
+    .redes-contatos {
+        padding: 1rem;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .titulo-page-myname {
+    
+        color: #9649cb;
+        font-size: 20px;
+        font-weight: 200px;
+        width: 300px;
+        height: 60px;
+        margin-top: 0rem;
+        margin-right: 2rem;
+    }
+    .titulo-page-myname h4 {
+        color: white;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    .my-img img {
+        width: 270px;
+        height: 250px;
+        margin-top: 0px;
+        opacity: .9;
+    }
+
+    .my-img {
+        margin: auto;
+        width: 270px;
+        height: 250px;
+        margin-top: 0px;
+        opacity: .7;
+    }
+
+    .header-principal {
+        height: 320px;
+    }
+
+    .list-nav-bar {
+        font-size: 10px;
+    }
+
+    .li-nav-bar {
+        display: block;
+        padding: .3rem;
+    }
+}
