@@ -20,9 +20,9 @@ a {
 
 /*Conteudo do cabeçalho e menu*/
 .header-principal {
-    background-color: #120119;
+    background-color: #0c000f;
     width: 100%;
-    height: 440px;
+    height: 500px;
 }
 .header-my-name_my-img {
     color: white;
@@ -37,7 +37,7 @@ a {
     font-weight: 500px;
     width: 300px;
     height: 60px;
-    margin-top: 5rem;
+    margin-top: 8rem;
     margin-right: 2rem;
 }
 .titulo-page-myname h4 {
@@ -45,36 +45,31 @@ a {
     font-size: 1.7rem;
     font-weight: 200;
 }
-.my-img {
+.my-img img{
     
-    width: 445px;
-    height: 425px;
-    margin-top: 5px;
-    opacity: .7;
+    width: 430px;
+    height: 400px;
+    margin-top: 6rem;
 }
 
 
 .nav-bar {
     background-color: #131414;
-    
-    width: 80%;
-    border-radius: 50px;
-    position: absolute;
-    margin-top: -1.5rem;
+    position: fixed;
+    width: 100%;
     text-align: center;
-    margin-left: 10%;
 }
 .list-nav-bar {
     
-    
+    margin-left: auto;
     padding: .5rem;
     color: #9649cb;
     font-weight: 500;
 }
 .li-nav-bar {
     font-size: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     list-style: none;
     display:inline-block;
 }
@@ -90,17 +85,15 @@ a {
 }
 
 .container-curriculo {
-    background-color: #131414;
-    height: auto;
-    width: 80%;
-    border-radius: 50px;
+    text-align: center;
     margin: auto;   
 }
 
-.conteudo-sobremim{
-    margin-left: 35%;
-    margin-right: 35%;
-}
+ .conteudo-sobremim{
+    font-size: 20px;
+    margin-top: 2rem;
+ }
+
 
 .h-conteudo-curriculo {
     color: #9649cb;
@@ -169,13 +162,14 @@ form input {
 
 form fieldset {
     border: 0;
+    padding: .2rem;
 }
 
 form label {
     display: block;
 }
 
-#input-enviar:hover {
+.button:hover {
     background-color: #9649cb;
 }
 
@@ -185,13 +179,22 @@ footer {
     margin-top: 10rem;
     width: 100%;
     height: 80px;
-    background-color: #120119;
+    background-color: #0c000f;
     color: white;
     text-align: center;
 }
 
 #p-footer {
     padding: 2rem;
+}
+
+.button:hover {
+    background-color: #19181a;
+}
+
+/*Classes vindas e scripts*/
+.invalid {
+    border: 2px solid red;
 }
 
 
@@ -209,9 +212,6 @@ footer {
     }
 
     .container-curriculo {
-        background-color: #000000;
-        height: auto;
-        width: 70%;
         border-radius: 50px;
         margin: auto;   
     }

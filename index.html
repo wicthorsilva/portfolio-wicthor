@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/img/icons/img_wicthor-portfolio.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/icons/logo_we-blak-400px.ico" type="image/x-icon">
         <title>Wicthor Portfólio</title>
         <link rel="stylesheet" href="css/style.css">
 
@@ -14,7 +14,17 @@
     </head>
     <body >
         <header>
+
             <div class="header-principal">
+
+                <nav class="nav-bar">
+                    <ul class="list-nav-bar">
+                        <li class="li-nav-bar"><a href="#sobre" style="text-decoration: none;">Currículo</a></li>
+                        <li class="li-nav-bar"><a href="#projetos" style="text-decoration: none;">Projetos</a></li>
+                        <li class="li-nav-bar"><a href="#contato" style="text-decoration: none;">Contatos</a></li>
+                    </ul>
+                </nav>
+
                 <div class="header-my-name_my-img">
                     <div class="titulo-page-myname">
                         <h1 id="my-name">Luiz Wicthor</h1>
@@ -27,13 +37,6 @@
                 </div>
             </div>
 
-            <nav class="nav-bar">
-                <ul class="list-nav-bar">
-                    <li class="li-nav-bar"><a href="#sobre" style="text-decoration: none;">Currículo</a></li>
-                    <li class="li-nav-bar"><a href="#projetos" style="text-decoration: none;">Projetos</a></li>
-                    <li class="li-nav-bar"><a href="#contato" style="text-decoration: none;">Contatos</a></li>
-                </ul>
-            </nav>
         </header>
         
               <!--Curriculo (Sobre mim)-->
@@ -45,11 +48,11 @@
             <div class="container-curriculo">
                 <div class="conteudo-sobremim">
 
-                    <h3 class="h-conteudo-curriculo">Resumo</h3>
+                    <!-- <h3 class="h-conteudo-curriculo">Resumo</h3> -->
                     <p class="text-conteudo-curriculo">Meu nome Wicthor, estou me formando em análise e desenvolvimento de sistemas, tenho conhecimento em desing gráfico e marketing digital.<br> Busco expandir meus conhecimentos profissionais e avançar nesse mundo de desenvolvimento de sistemas.</p>
                     <br>
 
-                    <h3 class="h-conteudo-curriculo">Acadêmico</h3>
+                    <!-- <h3 class="h-conteudo-curriculo">Acadêmico</h3>
                     <ul class="text-conteudo-curriculo">
                         <li class="li-curriculo">Cusro de designer gráfico.</li>
                         <li class="li-curriculo">Cusro de manutenção de computadores.</li>
@@ -61,7 +64,7 @@
                     <ul class="text-conteudo-curriculo">
                         <li class="li-curriculo">Projetos pessoais de estudos.</li>
                         <li class="li-curriculo">Portfólio pessoal na web.</li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </section>
@@ -110,30 +113,32 @@
             <div class="formulario-contato">
                 <!-- <div id="h2-contato"><h2>Fale conosco</h2></div> -->
     
-                <form action="https://web.whatsapp.com/send?phone=5581999510178" target="_blank">
-    
+                <form onsubmit="event.preventDefault()">
+
                     <fieldset>
-                        <label for="nome">Seu nome</label>
-                        <input type="text" name="nome">
+                        <label for="input-nome">Nome</label>
+                        <input type="text" name="input-nome" id="input-nome" required minlength="2">
                     </fieldset>
     
-                    <!-- <fieldset>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email">
-                    </fieldset> -->
+                    <fieldset>
+                        <label for="input-email">E-mail</label>
+                        <input type="email" name="input-email" id="input-email" required>
+                    </fieldset>
     
                     <fieldset>
-                        <label for="assunto">Assunto</label>
-                        <input type="text" name="assunto">
+                        <label for="input-tel">Telefone</label>
+                        <input type="tel" name="input-tel" id="input-tel" placeholder="(99) 99999-9999" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxlength="15">
                     </fieldset>
     
                     <fieldset>
                         <label for="input-msg">Mensagem</label>
                         <textarea name="input-msg" id="input-msg" cols="30" rows="10"></textarea>
-                        <input id="input-enviar" type="submit" value="Enviar" style="width: 80px; height: 40px;">
                     </fieldset>
     
-                    
+                    <center>
+                        <input type="submit" value="ENVIAR" class="button" onclick="enviarFormulario()" style="width: 80px; height: 40px;">
+                    </center>
+    
                 </form>
             </div>
 
@@ -165,6 +170,9 @@
         <footer>
             <p id="p-footer">Desenvolvido por Wicthor</p>
         </footer>
+
+
+        <script src="scripts/scripts.js"></script>
     </body>
 
 
