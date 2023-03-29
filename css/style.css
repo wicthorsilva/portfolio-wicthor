@@ -14,9 +14,25 @@ body{
     position: relative;
 }
 
-a {
+li a {
     color: #9f47f1;
+    text-decoration: none;
 }
+
+#btn {
+    text-align: center;
+    margin-top: .5rem;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #9f47f1;
+    color: white;
+    font-size: 20px;
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    cursor: pointer;
+}
+
 
 /*Conteudo do cabeçalho e menu*/
 .header-principal {
@@ -37,8 +53,9 @@ a {
     font-weight: 200px;
     width: 300px;
     height: 60px;
-    margin-top: 8rem;
+    margin-top: 10rem;
     margin-right: 2rem;
+    text-align: center;
 }
 .titulo-page-myname h4 {
     color: white;
@@ -50,6 +67,7 @@ a {
     width: 350px;
     height: 350px;
     margin-top: 6rem;
+    margin-left: 20%;
 }
 
 
@@ -219,7 +237,7 @@ footer {
     .header-my-name_my-img {
         color: white;
         display: block;
-        margin-left: 10%;
+       margin: auto;
     }
 
     .conteudo-sobremim{
@@ -241,7 +259,7 @@ footer {
     .titulo-page-myname {
     
         color: #9f47f1;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 200px;
         width: 300px;
         height: 60px;
@@ -255,29 +273,21 @@ footer {
     }
 
     .my-img img {
-        width: 270px;
+        margin-top: 2rem;
         height: 250px;
-        margin-top: 0px;
+        width: 250px;
     }
-
-    .my-img {
-    
-        width: 270px;
-        height: 250px;
-        margin-top: 0px;
-    }
-
-
-
     
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
+
 
     .header-my-name_my-img {
         color: white;
-        display: block;
-        margin-left: 10%;
+        display: inline-block;
+        width: 100%;
+        margin-left: 1.5rem;
     }
 
     .conteudo-sobremim{
@@ -301,32 +311,23 @@ footer {
     .titulo-page-myname {
     
         color: #9f47f1;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 200px;
-        width: 300px;
         height: 60px;
-        margin-top: 0rem;
-        margin-right: 2rem;
+        margin-top: 1rem;
+        text-align: center;
     }
     .titulo-page-myname h4 {
         color: white;
-        font-size: 15px;
+        font-size: 19px;
         font-weight: 200;
     }
 
-    .my-img img {
-        width: 270px;
-        height: 250px;
-        margin-top: 0px;
-        opacity: .9;
-    }
-
     .my-img {
-        margin: auto;
-        width: 270px;
+        margin-top: 2rem;
         height: 250px;
-        margin-top: 0px;
-        opacity: .7;
+        width: 250px;
+        margin-left: -.9rem;
     }
 
 
