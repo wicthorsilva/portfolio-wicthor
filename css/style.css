@@ -43,31 +43,29 @@ li a {
 .header-my-name_my-img {
     color: white;
     display: flex;
-    margin-left: 20%;
 }
 
 .titulo-page-myname {
     
     color: #9f47f1;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 200px;
-    width: 300px;
-    height: 60px;
     margin-top: 10rem;
-    margin-right: 2rem;
     text-align: center;
+    margin: auto;
 }
 .titulo-page-myname h4 {
     color: white;
     font-size: 21px;
     font-weight: 200;
 }
-.my-img img{
-    
+.my-img img{  
     width: 350px;
     height: 350px;
-    margin-top: 6rem;
-    margin-left: 20%;
+}
+.my-img{  
+    margin-top: 5rem;
+    margin-right: auto;
 }
 
 
@@ -118,14 +116,18 @@ li a {
     text-align: center;
 }
 
-.container-curriculo {
+ .container-curriculo {
     text-align: center;
     margin: auto;   
-}
+  }
 
  .conteudo-sobremim{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 900px;
     font-size: 20px;
     margin-top: 2rem;
+    text-align: center;
  }
 
 
@@ -147,13 +149,20 @@ li a {
 }
 
 .boxs-cards {
-    margin: 1rem;
+    margin: 2rem;
     display: inline-block;
-    background-color: rgb(79, 79, 78);
-    width: 250px;
-    height: 150px;
+    background-color: #0d0d17;
+    width: 320px;
+    /* height: 210px; */
     border-radius: 15px;
     margin-top: 2rem;
+}
+
+.card-img {
+    width: 320px;
+    height: 170px;
+    border-radius: 15px;
+    padding-bottom: 1.5rem;
     overflow: hidden;
 }
 
@@ -161,6 +170,15 @@ li a {
     transform: scale(1.25,1.25);
 }
 
+.boxs-cards a{
+    text-decoration: none;
+    
+}
+.boxs-cards span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
 
 
 /*Contatos*/
@@ -231,112 +249,44 @@ footer {
     border: 2px solid red;
 }
 
+/*____________ Media - Querys    ____________*/
 
-@media (max-width:400px) {
-
-    .header-my-name_my-img {
-        color: white;
-        display: block;
-       margin: auto;
+@media (max-width:950px) {
+    .conteudo-sobremim {
+        width: 600px;
     }
-
-    .conteudo-sobremim{
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .container-curriculo {
-        border-radius: 50px;
-        margin: auto;   
-    }
-
-    .redes-contatos {
-        padding: 1rem;
-        text-align: center;
-        display: inline-block;
-    }
-
-    .titulo-page-myname {
-    
-        color: #9f47f1;
-        font-size: 15px;
-        font-weight: 200px;
-        width: 300px;
-        height: 60px;
-        margin-top: 0rem;
-        margin-right: 2rem;
-    }
-    .titulo-page-myname h4 {
-        color: white;
-        font-size: 15px;
-        font-weight: 200;
-    }
-
-    .my-img img {
-        margin-top: 2rem;
-        height: 250px;
-        width: 250px;
-    }
-    
 }
 
-@media (max-width:700px) {
-
+@media (max-width:650px) {
+    .conteudo-sobremim {
+        width: 450px;
+        font-size: 18px;
+    }
 
     .header-my-name_my-img {
-        color: white;
-        display: inline-block;
-        width: 100%;
-        margin-left: 1.5rem;
-    }
-
-    .conteudo-sobremim{
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .container-curriculo {
-        height: auto;
-        width: 70%;
-        border-radius: 50px;
-        margin: auto;   
-    }
-
-    .redes-contatos {
-        padding: 1rem;
+        display: block;
         text-align: center;
-        display: inline-block;
     }
 
     .titulo-page-myname {
-    
-        color: #9f47f1;
-        font-size: 18px;
-        font-weight: 200px;
-        height: 60px;
-        margin-top: 1rem;
-        text-align: center;
+        margin-top: 1.5rem;
     }
-    .titulo-page-myname h4 {
-        color: white;
-        font-size: 19px;
-        font-weight: 200;
+}
+
+@media (max-width:480px) {
+    .conteudo-sobremim {
+        width: 330px;
     }
 
-    .my-img {
-        margin-top: 2rem;
-        height: 250px;
-        width: 250px;
-        margin-left: -.9rem;
+    .titulo-page-myname h1{
+        font-size: 40px;
+    }
+    .titulo-page-myname h4{
+        font-size: 20px;
     }
 
-
-    .list-nav-bar {
-        font-size: 10px;
-    }
-
-    .li-nav-bar {
-        display: block;
-        padding: .3rem;
+    .my-img img{  
+        width: 300px;
+        height: 300px;
     }
 }
