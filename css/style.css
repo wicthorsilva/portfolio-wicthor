@@ -152,14 +152,14 @@ li a {
     margin: 2rem;
     display: inline-block;
     background-color: #0d0d17;
-    width: 320px;
+    width: 310px;
     /* height: 210px; */
     border-radius: 15px;
     margin-top: 2rem;
 }
 
 .card-img {
-    width: 320px;
+    width: 310px;
     height: 170px;
     border-radius: 15px;
     padding-bottom: 1.5rem;
