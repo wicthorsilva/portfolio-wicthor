@@ -22,13 +22,13 @@ li a {
 #btn {
     text-align: center;
     margin-top: .5rem;
-    width: 200px;
-    height: 35px;
+    width: 150px;
+    height: 30px;
     border-radius: 20px;
     border: 0;
     background-color: #9f47f1;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
     cursor: pointer;
 }
@@ -48,7 +48,7 @@ li a {
 .titulo-page-myname {
     
     color: #9f47f1;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200px;
     margin-top: 10rem;
     text-align: center;
@@ -56,12 +56,12 @@ li a {
 }
 .titulo-page-myname h4 {
     color: white;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 200;
 }
 .my-img img{  
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 .my-img{  
     margin-top: 5rem;
@@ -111,7 +111,7 @@ li a {
 
 .titulos-page-conteudos {
     color: #9f47f1;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 5rem;
     text-align: center;
 }
@@ -125,7 +125,7 @@ li a {
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     width: 900px;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 2rem;
     text-align: center;
  }
@@ -139,7 +139,7 @@ li a {
     
 }
 .text-conteudo-curriculo {
-    color: white;
+    color: #999fbd;
 
 }
 
